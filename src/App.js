@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import background from './background.png';
 import './App.css';
 import Header from './Header';
 import Home from './Home'
@@ -8,9 +8,11 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="container min-vh-100" style={{backgroundImage: `url(${background})`}}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </>
   );
 }
