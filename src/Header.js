@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-links">
+        <>
+        <nav className="navbar navbar-expand-lg navbar-header fixed-top">
         <button className="navbar-toggler navbar-light ml-auto" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
         </button>
@@ -20,5 +21,6 @@ export default function Header() {
         </ul>
         </div>
         </nav>
+        </>
     );
 }

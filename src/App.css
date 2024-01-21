@@ -1,43 +1,53 @@
-.App {
-  text-align: center;
+.navbar-header {
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgb(127, 127, 127);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.navbar-links .nav-link {
+.navbar-header .nav-link {
   font-family: monospace;
   color: rgb(49, 111, 255);
+}
+
+.banner {
+  background-image: url("background.png");
+  padding-top: 5%;
+  padding-left: 15%;
+  height: 500px;
+  background-size: cover;
+  box-shadow: inset 0px -10px 20px -10px rgb(36, 36, 36);
+}
+
+.banner-text {
+  background-color: white;
+  font-family: Cutive Mono;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.main-container {
+  margin-top: 55px;
+  padding-left: 0px;
+  padding-right: 0px;
+  min-width: 100%;
+  background-color: white;
+}
+
+.content-container {
+  padding: 2%;
+}
+
+.content-card {
+  border-radius: 0px;
+  border: 0px;
+  min-height: 100%;
+  padding: 5% 10%;
+}
+
+.form-card {
+  padding: 40px;
+}
+
+::selection {
+  background: rgb(44, 44, 44);
+  color: white;
 }

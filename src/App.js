@@ -1,18 +1,21 @@
-import background from './background.png';
+//import background from './background.png';
 import './App.css';
 import Header from './Header';
-import Home from './Home'
+import Home from './Home';
+import Contact from './Contact';
+import { MainContainer } from './Content';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <Header />
-      <div className="container min-vh-100" style={{backgroundImage: `url(${background})`}}>
+      <MainContainer>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </div>
+      </MainContainer>
     </>
   );
 }
